@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Identificando Membros da Minha Família</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <br>
+      <div class = "titulo">Identificando Minha Família</div>
+      <br><br>
+
+      <p style="font-size: 35px;">O modelo foi treinado para indentificar a minha família: </p>
+
+      <b style = "font-size: 20px;" class="nameOfObjects">
+        <hr style="width: 660px;">
+        Irmã 
+        <hr style="width: 600px;">
+        Irmão
+        <hr style="width: 575px;">
+        Mãe
+        <hr style="width: 600px;">
+        Pai
+        <hr style="width: 650px;">
+      </b>
+      <br>
+
+      <div style="background-color: darkkhaki; width: 500px;">
+        <br><br>
+
+        <div style="background-color: darkmagenta; width: 400px;">
+
+          <label style="font-size: 20px;">Sua webcam </label>
+          <div id="camera"></div>
+
+          <div id="result"></div>
+
+          <br><br>
+
+          <button onclick="takeSnapshot();" class="btn btn-info">Capturar Imagem</button>
+
+          <br><br>
+        </div>
+
+        <br><br>
+
+        <div style="background-color: yellowgreen; width: 250px;">
+          <br>
+
+          <div style="background-color: midnightblue; width: 200px;">
+            <br>
+
+            <button onclick="check();" class="btn btn-success">Identificar Membros</button>
+        
+            <br><br>
+          </div>
+
+          <br>
+
+          <p style="font-size: 22px;">Membro : <span id="resultObjectName"></span> </p>
+          <p style="font-size: 22px;">Precisão : <span id="resultObjectAccuracy"></span> </p>
+        </div>
+      </div>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
