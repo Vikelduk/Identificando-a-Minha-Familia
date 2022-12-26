@@ -14,7 +14,7 @@ body
 {
   border: 2px dashed black;
   width: 350px;
-  height: 200px; 
+  height: 300px; 
 }
 .nameOfObjects, #resultObjectName  , #resultObjectAccuracy
 {
